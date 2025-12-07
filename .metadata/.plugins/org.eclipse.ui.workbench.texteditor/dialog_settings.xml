@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="true"/>
+		<list key="replacehistory">
+			<item value="category"/>
+			<item value="brand"/>
+			<item value="feature"/>
+			<item value="offer"/>
+		</list>
+		<list key="findhistory">
+			<item value="brand"/>
+			<item value="offer"/>
+			<item value="product"/>
+			<item value="features"/>
+		</list>
+	</section>
+</section>

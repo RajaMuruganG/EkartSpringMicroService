@@ -1,0 +1,30 @@
+package com.productapp.model;
+
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import lombok.AllArgsConstructor;
+import lombok.Generated;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+public class ProductRequest {
+
+	private Integer productId;
+	private String productName;
+	private double price;
+	private FeaturesRequest features;
+	private List<OffersRequest> offers;
+	private BrandRequest brand;
+}

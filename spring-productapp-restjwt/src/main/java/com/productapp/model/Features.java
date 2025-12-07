@@ -1,0 +1,30 @@
+package com.productapp.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import lombok.AllArgsConstructor;
+import lombok.Generated;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+@Entity
+public class Features {
+
+	@Id
+	@SequenceGenerator(name = "features_gen", sequenceName = "features_seq", initialValue = 10, allocationSize = 1)
+	@GeneratedValue(generator = "features_gen", strategy = GenerationType.AUTO)
+	private Integer featuresId;
+	private String material;
+	private String color;
+	
+}

@@ -1,0 +1,5 @@
+package com.greetcaller.config;
+
+public class WebConfig {
+
+}

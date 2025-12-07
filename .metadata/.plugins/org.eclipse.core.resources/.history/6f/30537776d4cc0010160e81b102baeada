@@ -1,0 +1,15 @@
+package com.greetservice.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetController {
+
+	
+	@GetMapping("/greet/{userName}")
+	String greet(@PathVariable String userName) {
+		return "Have a great day "+userName;
+	}
+}

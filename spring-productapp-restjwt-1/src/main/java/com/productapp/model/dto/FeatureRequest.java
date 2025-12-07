@@ -1,0 +1,21 @@
+package com.productapp.model.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
+public class FeatureRequest {
+
+	private Integer featureId;
+	
+	private String color;
+	private String display;
+	
+}

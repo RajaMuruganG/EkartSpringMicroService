@@ -1,0 +1,37 @@
+package com.greetservice.controller;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/greeter")
+public class GreetController {
+
+	// http://localhost:8081/greet/priya
+	@GetMapping("/greet/{username}")
+	public ResponseEntity<String> greetUser(@PathVariable String username) {
+	    String msg = "Have a great day " + username;
+	    return ResponseEntity.ok(msg);
+	}
+
+	// http://localhost:8081/show-books
+	@GetMapping("/show-books")
+	public ResponseEntity<List<String>> showBooks() {
+	    return ResponseEntity.ok(Arrays.asList("Java", "Spring"));
+	}
+
+	// http://localhost:8081/print/userdetails?username=Priya
+	@GetMapping("/print/userdetails")
+	public ResponseEntity<String> printDetails(@RequestParam String username) {
+	    String msg = "Welcome " + username;
+	    return ResponseEntity.ok(msg);
+	}
+
+}

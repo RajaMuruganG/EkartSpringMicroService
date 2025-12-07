@@ -1,0 +1,15 @@
+#datasource specific properties
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecomproductapp
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: ecom-product-app
+
+jwt:
+ secret: onlinedelivery

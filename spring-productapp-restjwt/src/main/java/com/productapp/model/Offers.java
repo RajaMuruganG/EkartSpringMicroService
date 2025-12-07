@@ -1,0 +1,28 @@
+package com.productapp.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+@Entity
+public class Offers {
+	@Id
+	@SequenceGenerator(name = "offers_gen", sequenceName = "offers_seq", initialValue = 100, allocationSize = 100)
+	@GeneratedValue(generator = "offers_gen", strategy = GenerationType.AUTO)
+	private Integer offerId;
+	private String offerType; //cashback, bankoffer,partner offer
+	private String description;
+	
+}

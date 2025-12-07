@@ -1,0 +1,34 @@
+package com.productapp.model;
+
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.SequenceGenerator;
+import lombok.AllArgsConstructor;
+import lombok.Generated;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@Entity
+public class Category {
+
+	@Id
+	@SequenceGenerator(name = "brand_gen", sequenceName = "brand_seq", initialValue = 1000, allocationSize = 1)
+	@GeneratedValue(generator = "brand_gen", strategy = GenerationType.AUTO)
+	private Integer brandId;
+	private String brandName;
+	
+	@OneToMany(mappedBy = "brand")
+	List<Product> products;
+	
+}
