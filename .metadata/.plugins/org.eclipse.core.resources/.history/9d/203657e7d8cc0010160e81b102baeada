@@ -1,5 +1,0 @@
-package com.greetcaller.service;
-
-public interface ICallerService {
-
-}

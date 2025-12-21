@@ -5,14 +5,21 @@
 		<item key="replaceBarOpen" value="true"/>
 		<list key="replacehistory">
 			<item value="category"/>
-			<item value="brand"/>
-			<item value="feature"/>
 			<item value="offer"/>
+			<item value="feature"/>
+			<item value="brand"/>
 		</list>
 		<list key="findhistory">
+			<item value="category"/>
+			<item value="categoryName"/>
+			<item value="categories"/>
+			<item value="model"/>
+			<item value="HttpStatus"/>
+			<item value="feature"/>
+			<item value="product"/>
+			<item value="spring-cloud-starter-config"/>
 			<item value="brand"/>
 			<item value="offer"/>
-			<item value="product"/>
 			<item value="features"/>
 		</list>
 	</section>

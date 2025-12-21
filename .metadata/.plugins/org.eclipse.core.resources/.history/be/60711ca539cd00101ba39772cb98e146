@@ -1,5 +1,0 @@
-package com.productapp.repo;
-
-public interface IProductRepo {
-
-}

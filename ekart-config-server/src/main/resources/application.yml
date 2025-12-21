@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/RajaMuruganG/EkartSpringMicroService.git
+          uri: https://github.com/RajaMuruganG/SpringMicroGitRepo.git
 
 server:
   port: 8888 
