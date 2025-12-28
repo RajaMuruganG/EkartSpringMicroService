@@ -4,12 +4,16 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="true"/>
 		<list key="replacehistory">
+			<item value="ResponseEntity&lt;List&lt;Product&gt;&gt;"/>
+			<item value="{}"/>
 			<item value="category"/>
 			<item value="offer"/>
 			<item value="feature"/>
 			<item value="brand"/>
 		</list>
 		<list key="findhistory">
+			<item value="List&lt;Product&gt;"/>
+			<item value=";"/>
 			<item value="category"/>
 			<item value="categoryName"/>
 			<item value="categories"/>
