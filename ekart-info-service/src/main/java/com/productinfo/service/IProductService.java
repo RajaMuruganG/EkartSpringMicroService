@@ -8,8 +8,8 @@ public interface IProductService {
 
 	Product getProductById(int productId);
 	List<Product> getAllProduct();
-	List<Product> getAllProductByBrand();
-	List<Product> getAllProductByCategory();
-	List<Product> getAllProductByCategoryAndLessPrice();
+	List<Product> getAllProductByBrand(String brand);
+	List<Product> getAllProductByCategory(String category);
+	List<Product> getAllProductByCategoryAndLessPrice(String category, double price);
 	
 }
